@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Facturas-2012">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="core-renderer.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/core-renderer/core-renderer">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mysql-connector-java-5.1.27-bin.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/mysql-connector-java-5.1.27-bin/mysql-connector-java-5.1.27-bin">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="core-renderer-minimal.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/core-renderer-minimal/core-renderer-minimal">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jdom.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/jdom/jdom">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mail.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/mail/mail">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="iText-2.0.8.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/iText-2.0.8/iText-2.0.8">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-ssl.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/commons-ssl/commons-ssl">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="Facturas-2012"/>
+        <property name="java-output-path" value="/Facturas-2012/build/classes"/>
+    </wb-module>
+</project-modules>

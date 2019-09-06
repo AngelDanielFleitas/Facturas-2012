@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<link href="css/styles.css" rel="stylesheet" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+<title>Registra tus datos</title>
+	<link rel="stylesheet" href="./js/development-bundle/themes/base/jquery.ui.all.css">
+	<script src="./js/development-bundle/jquery-1.9.1.js"></script>
+	<script src="./js/development-bundle/ui/jquery.ui.core.js"></script>
+	<script src="./js/development-bundle/ui/jquery.ui.widget.js"></script>
+	<script src="./js/development-bundle/ui/jquery.ui.tabs.js"></script>
+	<link rel="stylesheet" href="./js/development-bundle/demos/demos.css">
+	<script>
+	$(function() {
+		$( "#tabs" ).tabs();
+	});
+	</script>
+</head>
+<body>
+	<div >
+			<div id="logo">	
+				<h1>&nbsp;</h1>
+				<a href="facturainicio.jsp"><small><img src="css/images/logo1.png" alt="" width="112" height="89" /></small></a>
+			</div>
+			<div id="wrap">
+			<h1>&nbsp;</h1>
+			<div id="menu">
+					
+					<ul>
+						<li><a href="index.jsp" class="active">Inicio</a></li>
+						<li><a href="Productos.html">Productos</a></li>
+						<li><a href="login.html">Iniciar Sesi&oacute;n</a></li>
+						<li><a href="Acerca.html">Acerca de </a></li>
+						<li><a href="#">Contacto</a></li>						
+					</ul>
+						<div class="clear"></div>					
+			</div>
+			<br>	
+			<div id="header2" align="center"><br>
+			<h1 style="color: #000">Proporciona tu informacion</h1><br>
+	<form method="post" action="ServletRegistro" name="registro">
+		<table border="0">
+                <tr>
+                    <td><h2>RFC:</h2> </td>
+                    <td><input type="text" name="rfc" size="50" style="text-transform:uppercase;" on keyup="javascript:this.value=this.value.toUpperCase();"required></td>
+                </tr>
+                <tr>
+                    <td><h2>Razon Social: </h2></td>
+                    <td><input type="text" name="rsocial" size="50" style="text-transform:uppercase;" on keyup="javascript:this.value=this.value.toUpperCase();" required></td>
+                </tr>
+                <tr>
+                    <td><h2>Calle: </h2></td>
+                    <td><input type="text" name="calle" size="50" style="text-transform:uppercase;" on keyup="javascript:this.value=this.value.toUpperCase();" required></td>
+                </tr>
+                 <tr>
+                    <td><h2>Numero Exterior: </h2></td>
+                    <td><input type="text" name="numeroext" size="50" style="text-transform:uppercase;" on keyup="javascript:this.value=this.value.toUpperCase();" required></td>
+                </tr>
+                <tr>
+                    <td><h2>Numero Interior: </h2></td>
+                    <td><input type="text" name="numeroint" size="50" style="text-transform:uppercase;" on keyup="javascript:this.value=this.value.toUpperCase();"></td>
+                </tr>
+                 <tr>
+                    <td><h2>Colonia: </h2></td>
+                    <td><input type="text" name="colonia" size="50" style="text-transform:uppercase;" on keyup="javascript:this.value=this.value.toUpperCase();" required></td>
+                </tr>
+                <tr>
+                    <td><h2>Codigo Postal: </h2></td>
+                    <td><input type="text" name="cp" size="50" style="text-transform:uppercase;" on keyup="javascript:this.value=this.value.toUpperCase();" required></td>
+                </tr>
+                <tr>
+                    <td><h2>Delegacion/Municipio: </h2></td>
+                    <td><input type="text" name="municipio" size="50" style="text-transform:uppercase;" on keyup="javascript:this.value=this.value.toUpperCase();" required></td>
+                </tr>
+                <tr>
+                    <td><h2>Estado: </h2></td>
+                   <td><select name="estado">
+		<option value="Aguascalientes">Aguascalientes</option>
+		<option value="Baja California">Baja California</option>
+		<option value="Baja California Sur">Baja California Sur</option>
+		<option value="Campeche">Campeche</option>
+		<option value="Chiapas">Chiapas</option>
+		<option value="Chihuahua">Chihuahua</option>
+		<option value="Coahuila de Zaragoza">Coahuila</option>
+		<option value="Colima">Colima</option>
+		<option value="Distrito Federal">Distrito Federal</option>
+		<option value="Durango">Durango</option>
+		<option value="Guanajuato">Guanajuato</option>
+		<option value="Guerrero">Guerrero</option>
+		<option value="Hidalgo">Hidalgo</option>
+		<option value="Jalisco">Jalisco</option>
+		<option value="Mexico">Mexico</option>
+		<option value="Michoacan de Ocampo">Michoacan</option>
+		<option value="Morelos">Morelos</option>
+		<option value="Nayarit">Nayarit</option>
+		<option value="Nuevo Leon">Nuevo Leon</option>
+		<option value="Oaxaca">Oaxaca</option>
+		<option value="Puebla">Puebla</option>
+		<option value="Queretaro de Arteaga">Queretaro</option>
+		<option value="Quintana Roo">Quintana Roo</option>
+		<option value="San Luis Potosi">San Luis Potosi</option>
+		<option value="Sinaloa">Sinaloa</option>
+		<option value="Sonora">Sonora</option>
+		<option value="Tabasco">Tabasco</option>
+		<option value="Tamaulipas">Tamaulipas</option>
+		<option value="Tlaxcala">Tlaxcala</option>
+		<option value="Veracruz-Llave">Veracruz</option>
+		<option value="Yucatan">Yucatan</option>
+		<option value="Zacatecas">Zacatecas</option></td>
+	</select>
+                </tr>
+                <tr>
+                    <td><h2>Correo electronico:</h2> </td>
+                    <td><input type="email" name="correo" size="50" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Registrar">
+                    </td>
+                </tr>
+          </table>
+	</form>
+	
+	<br><br>
+	<a href="./index.jsp" ><h1 style="color: #004">Regresar</h1></a>
+	</div>
+</body>
+</html>
